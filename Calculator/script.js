@@ -13,6 +13,7 @@ function calculate(){
         display.value = Function('return (' + display.value + ')')();
     }
     catch (e) {
-        setTimeout(display.value = "Error",1000);
+        display.value = "Error";
+        setTimeout(ClearDisplay,1500);
     }
 }
