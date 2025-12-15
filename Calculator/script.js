@@ -14,6 +14,6 @@ function calculate(){
     }
     catch (e) {
         display.value = "Error";
-        setTimeout(display.value = "",1500);
+        setTimeout(ClearDisplay,2000);
     }
 }
