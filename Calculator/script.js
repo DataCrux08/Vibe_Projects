@@ -13,6 +13,10 @@ function calculate(){
         display.value = Function('return (' + display.value + ')')();
     }
     catch (e) {
+<<<<<<< HEAD
+=======
+        display.value = "Error";
+>>>>>>> 32a4362 (Fixed the input error and also the timeout function)
         setTimeout(ClearDisplay,1500);
     }
 }
