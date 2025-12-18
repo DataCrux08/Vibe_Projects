@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>JS Camera Follow Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div id = "myBox">
-        Character
-    </div>
-    <script src="script.js"></script>
+
+<div id="viewport">
+  <div id="world">
+    <div id="player"></div>
+  </div>
+</div>
+
+<!-- MOBILE CONTROLS -->
+<div id="controls">
+  <button data-dir="up">⬆</button><br />
+  <button data-dir="left">⬅</button>
+  <button data-dir="down">⬇</button>
+  <button data-dir="right">➡</button>
+</div>
+
+<button id="toggleControls">Enable Controls</button>
+
+<script src="script.js"></script>
 </body>
 </html>
