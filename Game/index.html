@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>JS Camera Follow Game</title>
+  <title>Rock-Paper-Scissors</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-<div id="viewport">
-  <div id="world">
-    <div id="player"></div>
+    <h1>Rock - Paper - Scissors</h1>
+    <div id = "Choices">
+      <button onclick="Game('rock')">✊</button>
+      <button onclick="Game('paper')">🤚</button>
+      <button onclick="Game('scissors')">✌</button>
+    </div>
+    <div id = "display">
+    <div id = "player"></div>
+    <div id = "computer"></div>
+    <div id = "resultDisplay"></div>
+    <div id = "playerScore"></div>
+    <div id = "computerScore"></div>
   </div>
-</div>
-
-<!-- MOBILE CONTROLS -->
-<div id="controls">
-  <button data-dir="up">⬆</button><br />
-  <button data-dir="left">⬅</button>
-  <button data-dir="down">⬇</button>
-  <button data-dir="right">➡</button>
-</div>
-
-<button id="toggleControls">Enable Controls</button>
-
 <script src="script.js"></script>
 </body>
 </html>
