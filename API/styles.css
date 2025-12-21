@@ -13,12 +13,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media (max-width: 768px) {
+  @media (hover: none) and (pointer: coarse) {
   body {
-    background-image: url("images/bg-mobile.jpeg");
+    background-image: url("images/bg-mobile.jpg");
     background-position: center top;
   }
 }
+
 }
 #characterName{
   background: rgba(15, 20, 30, 0.55);
