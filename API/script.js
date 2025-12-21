@@ -1,5 +1,9 @@
 const result = document.getElementById("result");
-
+document.getElementById('characterName').addEventListener("keydown",(e) => {
+    if(e.key === "Enter"){
+        fetchData();
+    }
+})
 async function fetchData() {
   try {
     const characterName = document
@@ -19,13 +23,17 @@ async function fetchData() {
     );
 
     if (character) {
+        const imageMarkup = character.image
+  ? `<img src="${character.image}" width = "200">`
+  : `<div class="no-image">No image available</div>`;
       result.innerHTML = `
         <h2 class="characterName">${character.name}</h2>
         <p class = "characterName">House: ${character.house || "Unknown"}</p>
-        <img src="${character.image}" width="200">
+        ${imageMarkup}
       `;
-    } else {
-      result.innerHTML = `<h2 class = "characterName">Character not found 😢</h2>`;
+    } 
+    else {
+      result.innerHTML = `<h2 class = "characterName">Character not found.</h2>`;
     }
 
   } catch (e) {

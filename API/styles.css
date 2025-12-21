@@ -50,3 +50,20 @@ button:active{
     color: white;
     font-size: 2em;
 }
+.no-image {
+  width: 180px;
+  height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+
+  color: #ccc;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}
