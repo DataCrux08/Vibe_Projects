@@ -6,7 +6,7 @@ html, body {
 }
 body {
   min-height: 100svh;
-  background-image: url("1267857.jpg");
+  background-image: url("images/1267857.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,10 +14,11 @@ body {
   flex-direction: column;
   align-items: center;
   @media (max-width: 768px) {
-    body{
-      background-position: center top;
-    }
+  body {
+    background-image: url("images/bg-mobile.jpeg");
+    background-position: center top;
   }
+}
 }
 #characterName{
   background: rgba(15, 20, 30, 0.55);
