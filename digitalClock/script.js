@@ -7,7 +7,6 @@ function updateClock(){
     const Minute = time.getMinutes().toString().padStart(2, 0);
     const Second = time.getSeconds().toString().padStart(2, 0);
     const timeString = `${Hours}:${Minute}:${Second} ${meridiem}`;
-    console.log(timeString);
     document.getElementById("clock").textContent = timeString;
 }
 updateClock();
